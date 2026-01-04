@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Universal Spawner & Translator Bench</name>
+  <author>OpenAI</author>
+  <packageId>openai.universalspawnertranslator</packageId>
+  <supportedVersions>
+    <li>1.4</li>
+    <li>1.5</li>
+  </supportedVersions>
+  <description>Adds a universal item spawner bench that consumes 1 wood per spawn and a text translator bench.</description>
+</ModMetaData>

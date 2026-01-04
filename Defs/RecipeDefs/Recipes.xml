@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>MakeForeignText</defName>
+    <label>write foreign text</label>
+    <description>Write a short note in a foreign language.</description>
+    <jobString>Writing foreign text.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <effectWorking>Write</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ForeignText>1</ForeignText>
+    </products>
+    <recipeUsers>
+      <li>TextTranslatorBench</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>TranslateForeignTextToEnglish</defName>
+    <label>translate to english</label>
+    <description>Translate foreign notes into English.</description>
+    <jobString>Translating text.</jobString>
+    <workAmount>300</workAmount>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+    <effectWorking>Research</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ForeignText</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <EnglishText>1</EnglishText>
+    </products>
+    <recipeUsers>
+      <li>TextTranslatorBench</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>
