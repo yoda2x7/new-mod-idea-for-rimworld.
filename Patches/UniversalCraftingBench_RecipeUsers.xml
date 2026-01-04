@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[not(recipeUsers)]</xpath>
+    <value>
+      <recipeUsers>
+        <li>UniversalCraftingBench</li>
+      </recipeUsers>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef/recipeUsers</xpath>
+    <value>
+      <li>UniversalCraftingBench</li>
+    </value>
+  </Operation>
+</Patch>

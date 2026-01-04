@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/RecipeDef/ingredients</xpath>
+    <value>
+      <ingredients>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>WoodLog</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+    </value>
+  </Operation>
+</Patch>
