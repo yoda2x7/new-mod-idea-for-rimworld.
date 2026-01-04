@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>ForeignText</defName>
+    <label>foreign text</label>
+    <description>Notes written in an unknown language.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Resource/Book</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>2</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>EnglishText</defName>
+    <label>english text</label>
+    <description>A translated note written in English.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Resource/Book</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>4</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>UniversalSpawnerBench</defName>
+    <label>universal spawner bench</label>
+    <description>Consumes 1 wood to spawn any selected item.</description>
+    <thingClass>UniversalSpawner.Building_UniversalSpawnerBench</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/Smithy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList>
+      <WoodLog>80</WoodLog>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Production</designationCategory>
+    <uiIconPath>Things/Building/Production/Smithy</uiIconPath>
+    <building>
+      <isEdifice>true</isEdifice>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>TextTranslatorBench</defName>
+    <label>text translator bench</label>
+    <description>Translates foreign text into English notes.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/ArtBench</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <costList>
+      <WoodLog>60</WoodLog>
+      <Steel>25</Steel>
+    </costList>
+    <designationCategory>Production</designationCategory>
+    <uiIconPath>Things/Building/Production/ArtBench</uiIconPath>
+    <building>
+      <workSpeedFactor>1</workSpeedFactor>
+    </building>
+    <comps>
+      <li Class="CompProperties_BillGiver">
+        <billGiverClass>Building_WorkTable</billGiverClass>
+      </li>
+    </comps>
+    <recipes>
+      <li>MakeForeignText</li>
+      <li>TranslateForeignTextToEnglish</li>
+    </recipes>
+  </ThingDef>
+</Defs>
