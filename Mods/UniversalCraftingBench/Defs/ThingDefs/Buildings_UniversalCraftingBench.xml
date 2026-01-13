@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>UniversalCraftingBench</defName>
+    <label>universal crafting bench</label>
+    <description>A compact work bench that can take any recipe available in the game.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/SimpleBench</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <size>(2,1)</size>
+    <category>Building</category>
+    <passability>PassThroughOnly</passability>
+    <pathCost>20</pathCost>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+    <designationCategory>Production</designationCategory>
+    <surfaceType>Item</surfaceType>
+    <building>
+      <workSpeedFactor>1.0</workSpeedFactor>
+      <unpoweredWorkTableWorkSpeedFactor>1.0</unpoweredWorkTableWorkSpeedFactor>
+    </building>
+    <recipes></recipes>
+    <comps>
+      <li Class="CompProperties_BillGiver" />
+    </comps>
+  </ThingDef>
+</Defs>
